@@ -1,5 +1,5 @@
 const { app } = require("../src/drivers/webservers/app");
-const supertest = require("supertest");
+const request = require("supertest");
 
 describe("Server is working", () => {
   //Ping test endpoint
