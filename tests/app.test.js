@@ -1,4 +1,4 @@
-const { app } = require("../src/drivers/webservers/app");
+const app = require("../src/drivers/webservers/app.js");
 const request = require("supertest");
 
 describe("Server is working", () => {
