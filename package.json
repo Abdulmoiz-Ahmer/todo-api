@@ -1,0 +1,8 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Abdulmoiz-Ahmer/todo-api.git",
+  "author": "Abdulmoiz <abdulmoizahmer1996@gmail.com>",
+  "license": "MIT"
+}
