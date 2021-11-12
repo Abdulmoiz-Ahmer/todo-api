@@ -1,5 +1,5 @@
 const faker = require("faker");
-let makeStudent = require("./index");
+let makeTodo = require("./index");
 
 describe("makeTodo", () => {
   it("throws error if invalid payload", () => {
