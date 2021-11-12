@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "a3e8b0b2-d168-4ea8-b398-cf377a06093d",
+		"name": "TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get todos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"schema={",
+							"    \"$schema\": \"http://json-schema.org/draft-07/schema\",",
+							"    \"$id\": \"http://example.com/example.json\",",
+							"    \"type\": \"array\",",
+							"    \"title\": \"The root schema\",",
+							"    \"description\": \"The root schema comprises the entire JSON document.\",",
+							"    \"default\": [],",
+							"    \"examples\": [",
+							"        [",
+							"            {",
+							"                \"id\": \"Server is up\",",
+							"                \"descrition\": \"Buy some milk\"",
+							"            }",
+							"        ]",
+							"    ],",
+							"    \"additionalItems\": true,",
+							"    \"items\": {",
+							"        \"$id\": \"#/items\",",
+							"        \"anyOf\": [",
+							"            {",
+							"                \"$id\": \"#/items/anyOf/0\",",
+							"                \"type\": \"object\",",
+							"                \"title\": \"The first anyOf schema\",",
+							"                \"description\": \"An explanation about the purpose of this instance.\",",
+							"                \"default\": {},",
+							"                \"examples\": [",
+							"                    {",
+							"                        \"id\": \"Server is up\",",
+							"                        \"descrition\": \"Buy some milk\"",
+							"                    }",
+							"                ],",
+							"                \"required\": [",
+							"                    \"id\",",
+							"                    \"descrition\"",
+							"                ],",
+							"                \"properties\": {",
+							"                    \"id\": {",
+							"                        \"$id\": \"#/items/anyOf/0/properties/id\",",
+							"                        \"type\": \"string\",",
+							"                        \"title\": \"The id schema\",",
+							"                        \"description\": \"An explanation about the purpose of this instance.\",",
+							"                        \"default\": \"\",",
+							"                        \"examples\": [",
+							"                            \"Server is up\"",
+							"                        ]",
+							"                    },",
+							"                    \"descrition\": {",
+							"                        \"$id\": \"#/items/anyOf/0/properties/descrition\",",
+							"                        \"type\": \"string\",",
+							"                        \"title\": \"The descrition schema\",",
+							"                        \"description\": \"An explanation about the purpose of this instance.\",",
+							"                        \"default\": \"\",",
+							"                        \"examples\": [",
+							"                            \"Buy some milk\"",
+							"                        ]",
+							"                    }",
+							"                },",
+							"                \"additionalProperties\": true",
+							"            }",
+							"        ]",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add todo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"schema={",
+							"    \"$schema\": \"http://json-schema.org/draft-07/schema\",",
+							"    \"$id\": \"http://example.com/example.json\",",
+							"    \"type\": \"object\",",
+							"    \"title\": \"The root schema\",",
+							"    \"description\": \"The root schema comprises the entire JSON document.\",",
+							"    \"default\": {},",
+							"    \"examples\": [",
+							"        {",
+							"            \"id\": \"Server is up\",",
+							"            \"descrition\": \"Buy some milk\"",
+							"        }",
+							"    ],",
+							"    \"required\": [",
+							"        \"id\",",
+							"        \"descrition\"",
+							"    ],",
+							"    \"properties\": {",
+							"        \"id\": {",
+							"            \"$id\": \"#/properties/id\",",
+							"            \"type\": \"string\",",
+							"            \"title\": \"The id schema\",",
+							"            \"description\": \"An explanation about the purpose of this instance.\",",
+							"            \"default\": \"\",",
+							"            \"examples\": [",
+							"                \"Server is up\"",
+							"            ]",
+							"        },",
+							"        \"descrition\": {",
+							"            \"$id\": \"#/properties/descrition\",",
+							"            \"type\": \"string\",",
+							"            \"title\": \"The descrition schema\",",
+							"            \"description\": \"An explanation about the purpose of this instance.\",",
+							"            \"default\": \"\",",
+							"            \"examples\": [",
+							"                \"Buy some milk\"",
+							"            ]",
+							"        }",
+							"    },",
+							"    \"additionalProperties\": true",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ping",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"schema={",
+							"    \"$schema\": \"http://json-schema.org/draft-07/schema\",",
+							"    \"$id\": \"http://example.com/example.json\",",
+							"    \"type\": \"object\",",
+							"    \"title\": \"The root schema\",",
+							"    \"description\": \"The root schema comprises the entire JSON document.\",",
+							"    \"default\": {},",
+							"    \"examples\": [",
+							"        {",
+							"            \"message\": \"Server is up\"",
+							"        }",
+							"    ],",
+							"    \"required\": [",
+							"        \"message\"",
+							"    ],",
+							"    \"properties\": {",
+							"        \"message\": {",
+							"            \"$id\": \"#/properties/message\",",
+							"            \"type\": \"string\",",
+							"            \"title\": \"The message schema\",",
+							"            \"description\": \"An explanation about the purpose of this instance.\",",
+							"            \"default\": \"\",",
+							"            \"examples\": [",
+							"                \"Server is up\"",
+							"            ]",
+							"        }",
+							"    },",
+							"    \"additionalProperties\": true",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"TODO's schema should be correct\", function() {",
+					"    var response = pm.response.json();",
+					"    var result=tv4.validateResult(response, schema)",
+					"    pm.expect(result.valid).to.be.true;",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:4000"
+		}
+	]
+}

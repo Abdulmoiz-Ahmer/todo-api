@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "test:contracts": "node ./tests/contracts/apiContractTest.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -15,5 +16,6 @@
     "kill-port": "^1.6.1",
     "nodemon": "^2.0.15",
     "supertest": "^6.1.6"
-  }
+  },
+  "devDependencies": {}
 }
