@@ -30,3 +30,15 @@ describe("Fetching all todos", () => {
     }
   });
 });
+describe("Creating a todo", () => {
+  //Ping test endpoint
+  test("Todo creation", async () => {
+    const response = await request(app)
+      .post("/api/todo")
+      .set("Accept", "application/json")
+      .send({ description: faker.lorem.sentence() });
+    expect(response.statusCode).toBe(200);
+    expect(item).toHaveProperty(id);
+    expect(item).toHaveProperty(description);
+  });
+});
