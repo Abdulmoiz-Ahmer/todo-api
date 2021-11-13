@@ -11,16 +11,12 @@ const seedDatabase = async function () {
     });
   }
 
-  await Todo.create({
-    description: faker.lorem.sentence(),
-  });
+  await Todo.create(todos);
 };
 
 // Drop DB then seed
 
-mongoose.connection.dropCollection("todo", async function () {
+mongoose.connection.dropCollection("todos", async function () {
   await seedDatabase();
   mongoose.connection.close();
 });
-
-
