@@ -1,4 +1,4 @@
-let buildMakeTodo = function (todoValidator) {
+const buildMakeTodo = function (todoValidator) {
   return ({ description } = {}) => {
     let { error } = todoValidator({ description });
     if (error) throw new Error(error);
