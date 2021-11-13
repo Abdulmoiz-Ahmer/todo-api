@@ -22,10 +22,12 @@ describe("Fetching all todos", () => {
     const response = await request(app).get("/api/todos").send();
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual(expect.any(Array));
+
     if (response.body.length > 0) {
       response.body.forEach((item) => {
-        expect(item).toHaveProperty(id);
-        expect(item).toHaveProperty(description);
+        console.log(item)
+        expect(item).toHaveProperty('id');
+        expect(item).toHaveProperty('description');
       });
     }
   });
