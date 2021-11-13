@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
+const mongo = require("../../config/index");
 
+const CONNECTION_STRING_MONGO = `mongodb+srv://${mongo.MONGO_USER}:${mongo.MONGO_PW}@cluster0.a6yvt.mongodb.net/TodoApp?retryWrites=true&w=majority`;
 // Mongoose connection
 mongoose
-  .connect(process.env.CONNECTION_STRING_MONGO, {
+  .connect(CONNECTION_STRING_MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
@@ -35,4 +37,4 @@ mongoose.connection.on("error", (error) =>
   console.log("error", "Mongoose connection Issue:", error)
 );
 
-export const oMongoose = mongoose;
+module.exports = mongoose;
