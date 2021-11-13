@@ -2,7 +2,6 @@ const express = require("express");
 const routes = require("./routes");
 const app = express();
 app.disable("x-powered-by");
-app.use(routes);
 app.use(express.json());
 app.use((_, response, next) => {
   response.set("access-control-allow-origin", "*");
@@ -10,5 +9,7 @@ app.use((_, response, next) => {
   response.set("access-control-allow-methods", "*");
   next();
 });
+app.use(routes);
+
 
 module.exports = app;
