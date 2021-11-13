@@ -25,9 +25,9 @@ describe("Fetching all todos", () => {
 
     if (response.body.length > 0) {
       response.body.forEach((item) => {
-        console.log(item)
-        expect(item).toHaveProperty('id');
-        expect(item).toHaveProperty('description');
+        console.log(item);
+        expect(item).toHaveProperty("id");
+        expect(item).toHaveProperty("description");
       });
     }
   });
@@ -40,7 +40,7 @@ describe("Creating a todo", () => {
       .set("Accept", "application/json")
       .send({ description: faker.lorem.sentence() });
     expect(response.statusCode).toBe(200);
-    expect(item).toHaveProperty(id);
-    expect(item).toHaveProperty(description);
+    expect(response.body).toHaveProperty("id");
+    expect(response.body).toHaveProperty("description");
   });
 });
