@@ -1,7 +1,7 @@
 let Joi = require("joi");
 
 let validator = (schema) => (payload) => {
-  let { error } = Joi.validate(payload, schema, { abortEarly: false });
+  let { error } = schema.validate(payload, { abortEarly: false });
   if (error) {
     let message = error.details.map((el) => el.message).join("\n");
     return {
