@@ -155,7 +155,7 @@ Distributed under the MIT License.
 
 Your Name - [Abdulmoiz Ahmer]() - abdulmoiz1996@gmail.com
 
-Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](http://todo.api.cryptobros.site/api/ping)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
