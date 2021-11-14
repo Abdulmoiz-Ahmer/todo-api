@@ -25,7 +25,6 @@ describe("Fetching all todos", () => {
 
     if (response.body.length > 0) {
       response.body.forEach((item) => {
-        console.log(item);
         expect(item).toHaveProperty("id");
         expect(item).toHaveProperty("description");
       });
