@@ -10,11 +10,7 @@
     "seed": "node src/db/mongodb/seeds/todo-seed.js",
     "test": "jest --forceExit",
     "test:contracts": "node ./tests/contracts/apiContractTest.js",
-    "husky": {
-      "hooks": {
-        "pre-push": "yarn run test"
-      }
-    }
+    "prepare": "husky install"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -28,6 +24,6 @@
     "supertest": "^6.1.6"
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.0"
   }
 }
