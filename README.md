@@ -68,6 +68,12 @@ For Testing
 - Contracts(postman collection)
 - Unit testing
 
+For Deployment
+
+- Husky pre-push to trigger test
+- CircleCI pipeline to trigger deployment on push
+- Digital Ocean Droplet
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
