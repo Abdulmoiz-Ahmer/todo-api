@@ -171,8 +171,9 @@ Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](http://todo.api.cryp
 - [Supertest](https://www.npmjs.com/package/supertest)
 - [Faker](https://www.npmjs.com/package/faker)
 - [Joi](https://www.npmjs.com/package/joi)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [nodemon](https://www.npmjs.com/package/nodemon)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Husky](https://www.npmjs.com/package/husky)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
