@@ -9,7 +9,6 @@ describe("Unit test", () => {
     };
 
     const responseObject = serialize(dummyTodoObject);
-    console.log(responseObject);
     expect(responseObject).toHaveProperty("id");
     expect(responseObject).not.toHaveProperty("_id");
   });
