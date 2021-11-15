@@ -170,8 +170,8 @@ This repository has been used with a [todo app](http://todo.ui.cryptobros.site/)
 
 Libraries used for testing:
 
-- [Jest](https://www.npmjs.com/package/jest)
-- [Supertest](https://www.npmjs.com/package/supertest)
+- [Jest](https://www.npmjs.com/package/jest) for assertion.
+- [Supertest](https://www.npmjs.com/package/supertest) for http requests.
 
 Note: To invoke all kind of tests use:
 
