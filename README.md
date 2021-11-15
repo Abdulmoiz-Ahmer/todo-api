@@ -35,6 +35,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#testing">Testing</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -61,12 +62,6 @@ Few words about the above architecture:
 
 - Outer Layer
   Drivers. Represents the UI or interface (Web or CLI). It communicates only with the data-access layer.
-
-For Testing
-
-- Acceptance testing
-- Contracts(postman collection)
-- Unit testing
 
 For Deployment
 
@@ -109,18 +104,38 @@ For Deployment
    ```
 3. Enter your Port, mongo user and password in `.env`
    ```js
-    PORT=4000
-    MONGO_USER=
-    MONGO_PW=
+   PORT=4000
+   MONGO_USER=
+   MONGO_PW=
    ```
 4. To seed database run
    ```js
-    yarn seed
+   yarn seed
    ```
-5. To seed database run
+5. To run
+
    ```js
-    yarn start
+   yarn start
+     or
+   docker build . -t todo-api;
+   docker run -p 4000:4000 todo-api;
+
    ```
+
+6. To run contract tests
+   ```js
+   yarn test:contracts
+   ```
+7. To run acceptance tests
+   ```js
+   yarn test:acceptance
+   ```
+8. To run all tests
+   ```js
+   yarn test
+   ```
+
+Note: Husky is part of the repository and executes all tests on pre-push stage. In case you want to build in docker container.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -129,6 +144,40 @@ For Deployment
 ## Usage
 
 This repository has been used with a [todo app](http://todo.ui.cryptobros.site/) and it's [repository.](https://github.com/Abdulmoiz-Ahmer/todo-ui)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Testing
+
+- Acceptance testing:
+  Acceptance tests are in the tests/acceptance directory.
+  Can be invoked with:
+
+  ```js
+  yarn test:acceptance
+  ```
+
+- Contracts(postman collection):
+  Contract tests are exported from postman application are in the directory tests/contracts.
+  Can be invoked with:
+
+  ```js
+    yarn test:contracts
+  ```
+
+- Unit testing
+  Unit Tests are in src folder in all folder along with the implementation.
+
+Libraries used for testing:
+
+- [Jest](https://www.npmjs.com/package/jest)
+- [Supertest](https://www.npmjs.com/package/supertest)
+
+Note: To invoke all kind of tests use:
+
+```js
+ yarn test
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -173,8 +222,6 @@ Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](http://todo.api.cryp
 - [CircleCI](https://circleci.com/)
 - [Digital Ocean Droplet](https://www.digitalocean.com/)
 - [Mongoose](https://mongoosejs.com/docs/)
-- [Jest](https://www.npmjs.com/package/jest)
-- [Supertest](https://www.npmjs.com/package/supertest)
 - [Faker](https://www.npmjs.com/package/faker)
 - [Joi](https://www.npmjs.com/package/joi)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
