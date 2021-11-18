@@ -7,8 +7,8 @@ jobs:
       - image: circleci/node:16.13
     steps:
       - checkout
-      - npm install
-      - run npm test
+      - run: npm install
+      - run: npm test
   pull-and-build:
     docker:
       - image: arvindr226/alpine-ssh
