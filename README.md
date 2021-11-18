@@ -9,7 +9,7 @@
     A todo application build with nodejs, expressJs, MongoDb, clean code architecture and tdd
     <br />
     <br />
-    <a href="http://todo.api.cryptobros.site/api/ping">View Demo</a>
+    <a href="https://todo.api.cryptobros.site/api/ping">View Demo</a>
     ·
     <a href="https://github.com/Abdulmoiz-Ahmer/todo-api/issues">Report Bug</a>
     ·
@@ -128,7 +128,7 @@ For Deployment
 
 ## Usage
 
-This repository has been used with a [todo app](http://todo.ui.cryptobros.site/) and it's [repository.](https://github.com/Abdulmoiz-Ahmer/todo-ui)
+This repository has been used with a [todo app](https://todo.ui.cryptobros.site/) and it's [repository.](https://github.com/Abdulmoiz-Ahmer/todo-ui)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -207,7 +207,7 @@ Distributed under the MIT License.
 
 Your Name - [Abdulmoiz Ahmer]() - abdulmoiz1996@gmail.com
 
-Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](http://todo.api.cryptobros.site/api/ping)
+Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](https://todo.api.cryptobros.site/api/ping)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
