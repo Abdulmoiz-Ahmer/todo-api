@@ -122,21 +122,6 @@ For Deployment
 
    ```
 
-6. To run contract tests
-   ```js
-   yarn test:contracts
-   ```
-7. To run acceptance tests
-   ```js
-   yarn test:acceptance
-   ```
-8. To run all tests
-   ```js
-   yarn test
-   ```
-
-Note: Husky is part of the repository and executes all tests on pre-push stage. In case you want to build in docker container.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
@@ -165,6 +150,14 @@ This repository has been used with a [todo app](http://todo.ui.cryptobros.site/)
     yarn test:contracts
   ```
 
+- Contracts(pact):
+  Contract tests are exported from postman application are in the directory tests/cdc.
+  Can be invoked with:
+
+  ```js
+    yarn test:verify-contracts
+  ```
+
 - Unit testing
   Unit Tests are in src folder in all folder along with the implementation.
 
@@ -172,6 +165,8 @@ Libraries used for testing:
 
 - [Jest](https://www.npmjs.com/package/jest) for assertion.
 - [Supertest](https://www.npmjs.com/package/supertest) for http requests.
+- [Pact.io](https://www.npmjs.com/package/@pact-foundation/pact)
+- [Postman testing using prescripts and test](https://www.postman.com/postman/workspace/test-examples-in-postman/overview)
 
 Note: To invoke all kind of tests use:
 
@@ -220,6 +215,7 @@ Project Link: [https://github.com/Abdulmoiz-Ahmer/todo-api](http://todo.api.cryp
 
 - [Clean code architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [CircleCI](https://circleci.com/)
+- [Docker](https://www.docker.com/)
 - [Digital Ocean Droplet](https://www.digitalocean.com/)
 - [Mongoose](https://mongoosejs.com/docs/)
 - [Faker](https://www.npmjs.com/package/faker)
