@@ -9,8 +9,6 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-      - store_test_results:
-        path: tests
   pull-and-build:
     docker:
       - image: arvindr226/alpine-ssh
