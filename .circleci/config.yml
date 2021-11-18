@@ -28,6 +28,7 @@ workflows:
                 - main
 
       - pull-and-build:
+          requires: test
           filters:
             branches:
               only:
