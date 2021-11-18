@@ -161,6 +161,8 @@ This repository has been used with a [todo app](http://todo.ui.cryptobros.site/)
 - Unit testing
   Unit Tests are in src folder in all folder along with the implementation.
 
+[Sample test run report of circleci pipeline](https://circleci.com/api/v1.1/project/github/Abdulmoiz-Ahmer/todo-api/35/output/103/0?file=true&allocation-id=619668b8cd826f6137e8e7b2-0-build%2F3016752E)
+
 Libraries used for testing:
 
 - [Jest](https://www.npmjs.com/package/jest) for assertion.
