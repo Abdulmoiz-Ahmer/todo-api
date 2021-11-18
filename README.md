@@ -65,7 +65,7 @@ Few words about the above architecture:
 
 For Deployment
 
-- Husky pre-push to trigger test
+- Husky pre-push to trigger tests
 - CircleCI pipeline to trigger deployment on push
 - Digital Ocean Droplet
 
