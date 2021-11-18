@@ -4,12 +4,11 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: node:16.13.0
-    working_directory: ~/repo
+      - image: circleci/node:16.13
     steps:
       - checkout
       - npm install
-      - run npm run test
+      - run npm test
   pull-and-build:
     docker:
       - image: arvindr226/alpine-ssh
