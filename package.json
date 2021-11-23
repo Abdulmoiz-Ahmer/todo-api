@@ -9,6 +9,7 @@
     "start": "nodemon index.js",
     "seed": "node src/db/mongodb/seeds/todo-seed.js",
     "test": "jest --forceExit",
+    "test:unit": "jest /tests/unit --forceExit",
     "test:contracts": "node ./tests/contracts/apiContractTest.js",
     "test:acceptance": "jest /tests/acceptance --forceExit",
     "test:verify-contracts": "jest --testTimeout 30000 /tests/cdc --forceExit",
