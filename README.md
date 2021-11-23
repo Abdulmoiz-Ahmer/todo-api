@@ -159,7 +159,12 @@ This repository has been used with a [todo app](https://todo.ui.cryptobros.site/
   ```
 
 - Unit testing
-  Unit Tests are in src folder in all folder along with the implementation.
+  Unit Tests tests are exported from postman application are in the directory tests/unit.
+  Can be invoked with:
+
+  ```js
+    yarn test:unit
+  ```
 
 [Sample test run report of circleci pipeline](https://circleci.com/api/v1.1/project/github/Abdulmoiz-Ahmer/todo-api/35/output/103/0?file=true&allocation-id=619668b8cd826f6137e8e7b2-0-build%2F3016752E)
 
