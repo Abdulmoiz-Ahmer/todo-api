@@ -11,6 +11,7 @@ const addTodo = (todoInfo) => {
   const newTodo = {
     description: todo.getDescription(),
   };
+  
   return Todo.create(newTodo).then(serialize);
 };
 
